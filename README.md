@@ -7,11 +7,11 @@ It simulates a real-time radar that receives flight updates, stores them in a da
 
 This system tracks flights in real-time by:
 
-Receiving live position updates (latitude, longitude, altitude, speed)
+-Receiving live position updates (latitude, longitude, altitude, speed)
 
-Storing them in MongoDB
+-Storing them in MongoDB
 
-Displaying active flights and their routes on a dynamic map (/map)
+-Displaying active flights and their routes on a dynamic map (/map)
 
 ##  API Endpoints
 
