@@ -11,9 +11,9 @@ class LocationUpdate(BaseModel):
 
 class Flight(BaseModel):
     flight_id: str
-    airline: Optional[str]
-    origin: Optional[str]
-    destination: Optional[str]
+    airline: Optional[str]="Unknown"
+    origin: Optional[str]="Unknown"
+    destination: Optional[str]="Unknown"
     status: str = "in_air"
     last_update: Optional[datetime]
-    updates: List[LocationUpdate] = []
+    updates: List[LocationUpdate] = Field(default_factory=list)
